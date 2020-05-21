@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <script type="text/javascript" src="JS/app.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+                <h1 class="signin">Sign in</h1>
+                <div>
+                    <!-- Insert name-->
+                    <label for="name">Name:</label>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <!-- Insert sruname-->
+                    <label for="surname">Surname:</label>
+                    <input id="surname" type="text">
+                </div>
+                <div>
+                    <!-- Insert email-->
+                    <label for="email">Email:</label>
+                    <input id="email" type="text">
+                </div>
+                <div>
+                    <!-- Insert age-->
+                    <label for="age">Age:</label>
+                    <input id="age" type="text">
+                </div>
+                <div>
+                    <!-- Selec Sex-->
+                    <label for="sex">Sex:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div>
+                    <!-- Selec country-->
+                    <label for="themes">Themes of interest:</label>
+                    <input type="checkbox" id="music" name="interest" value="music">
+                    <label for="music">Music</label>
+                    <input type="checkbox" id="sport" name="interest" value="sport">
+                    <label for="sport">Sport</label>
+                    <input type="checkbox" id="games" name="interest" value="games">
+                    <label for="games">Games</label>
+                    <input type="checkbox" id="technology" name="interest" value="technology">
+                    <label for="technology">Technology</label>
+                </div>
+                <div>
+                    <!-- Selec country-->
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="" selected="selected">- Select -</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="uruguay ">Uruguay</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- Text box coments -->
+                    <label for="coments">Coments:</label>
+                    <textarea id="coments" rows="2" cols="20"></textarea>
+                </div>
+                <div>
+                    <!-- Button send-->
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
