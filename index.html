@@ -11,71 +11,86 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="form">
+            <form autocomplete="off" action="" class="form">
                 <h1 class="signin">Sign in</h1>
-                <div>
+                <div class="text_part">
                     <!-- Insert name-->
                     <label for="name">Name:</label>
-                    <input id="name" type="text">
-                </div>
-                <div>
+                    <input id="name" type="text" placeholder="Name">
+
                     <!-- Insert sruname-->
                     <label for="surname">Surname:</label>
-                    <input id="surname" type="text">
-                </div>
-                <div>
+                    <input id="surname" type="text" placeholder="Surname">
+
                     <!-- Insert email-->
                     <label for="email">Email:</label>
-                    <input id="email" type="text">
-                </div>
-                <div>
+                    <input id="email" type="text" placeholder="Email@example.com">
+
                     <!-- Insert age-->
                     <label for="age">Age:</label>
-                    <input id="age" type="text">
+                    <input id="age" type="text" placeholder="Age number">
                 </div>
-                <div>
-                    <!-- Selec Sex-->
-                    <label for="sex">Sex:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
+                <div class="choose_part">
+                    <div class="radio">
+                        <!-- Selec Sex-->
+                        <label for="sex">Sex:</label>
+                        <span>
+                            <label for="male">
+                                <input type="radio" id="male" name="gender" value="male"> Male</label>
+                        </span>
+                        <span>
+                            <label for="female">
+                                <input type="radio" id="female" name="gender" value="female"> Female</label>
+                        </span>
+                        <span>
+                            <label for="other">
+                                <input type="radio" id="other" name="gender" value="other"> Other</label>
+
+                        </span>
+                    </div>
+                    <div class="check">
+                        <!-- Selec country-->
+                        <label for="themes">Interest themes:</label>
+                        <span>
+                            <label for="music">
+                                <input type="checkbox" id="music" name="interest" value="music"> Music</label>
+                        </span>
+                        <span>
+                            <label for="sport">
+                                <input type="checkbox" id="sport" name="interest" value="sport"> Sport</label>
+                        </span>
+                        <span>
+                            <label for="games">
+                                <input type="checkbox" id="games" name="interest" value="games"> Games</label>
+                        </span>
+                        <span>
+                            <label for="technology">
+                                <input type="checkbox" id="technology" name="interest" value="technology">
+                                Technology</label>
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <!-- Selec country-->
-                    <label for="themes">Themes of interest:</label>
-                    <input type="checkbox" id="music" name="interest" value="music">
-                    <label for="music">Music</label>
-                    <input type="checkbox" id="sport" name="interest" value="sport">
-                    <label for="sport">Sport</label>
-                    <input type="checkbox" id="games" name="interest" value="games">
-                    <label for="games">Games</label>
-                    <input type="checkbox" id="technology" name="interest" value="technology">
-                    <label for="technology">Technology</label>
-                </div>
-                <div>
+                <div class="choose_country">
                     <!-- Selec country-->
                     <label for="country">Country:</label>
                     <select id="country" name="country">
-                        <option value="" selected="selected">- Select -</option>
+                        <option value="" disabled selected>- Select country-</option>
                         <option value="argentina">Argentina</option>
                         <option value="chile">Chile</option>
                         <option value="brasil">Brasil</option>
                         <option value="uruguay ">Uruguay</option>
                     </select>
                 </div>
-                <div>
+                <div class="text_part">
                     <!-- Text box coments -->
                     <label for="coments">Coments:</label>
-                    <textarea id="coments" rows="2" cols="20"></textarea>
+                    <textarea id="coments" placeholder="Write comments here." rows="2" cols="20"></textarea>
                 </div>
                 <div>
                     <!-- Button send-->
                     <button type="submit">Send</button>
                 </div>
-            </div>
+            </form>
         </div>
     </body>
 </html>
