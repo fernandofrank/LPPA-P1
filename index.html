@@ -15,19 +15,31 @@
                 <h1 class="signin">Sign in</h1>
                 <div class="text_part">
                     <!-- Insert name-->
-                    <label for="name">Name:</label>
+                    <span>
+                        <label for="name">Name:</label>
+                        <label id="nombre_error" class="error">ee</label>
+                    </span>
                     <input id="name" type="text" placeholder="Name">
 
                     <!-- Insert sruname-->
-                    <label for="surname">Surname:</label>
+                    <span>
+                        <label for="surname">Surname:</label>
+                        <label id="surname_error" class="error">ee</label>
+                    </span>
                     <input id="surname" type="text" placeholder="Surname">
 
                     <!-- Insert email-->
-                    <label for="email">Email:</label>
+                    <span>
+                        <label for="email">Email:</label>
+                        <label id="email_error" class="error">ee</label>
+                    </span>
                     <input id="email" type="text" placeholder="Email@example.com">
 
                     <!-- Insert age-->
-                    <label for="age">Age:</label>
+                    <span>
+                        <label for="age">Age:</label>
+                        <label id="age_error" class="error">ee</label>
+                    </span>
                     <input id="age" type="text" placeholder="Age number">
                 </div>
                 <div class="choose_part">
@@ -88,7 +100,7 @@
                 </div>
                 <div>
                     <!-- Button send-->
-                    <button type="submit">Send</button>
+                    <button id="send" type="submit" onclick='return send_form();'>Send</button>
                 </div>
             </form>
         </div>
