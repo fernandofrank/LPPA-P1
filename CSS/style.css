@@ -1,23 +1,21 @@
-.body{
-    display: flex;
-    justify-content: center;
-}
-
 .wrapper{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background: #59abe3;
     margin: 0;
 }
 
 .form{
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 340px;
-    height: 720px;
+    height: 760px;
     padding: 20px 30px;
     box-sizing: border-box;
     background: #e6e6e6;
@@ -27,6 +25,7 @@
 
 /* Button send */
 .signin{
+    display: flex;
     margin: 10px 0;
     width: 120px;
     color: #78788c;
@@ -34,14 +33,19 @@
 }
 
 label {
+    display: flex;
     font-size: 14px;
     color: #5a5a5a;
 }
 /*#region Text part*/
 .text_part{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 .text_part input{
+    display: flex;
+    flex-direction: column;
     margin: 5px 0;
     width: 100%;
     padding: 10px;
@@ -60,6 +64,7 @@ label {
 }
 
 .text_part textarea{
+    display: flex;
     width: 100%;
     padding: 10px;
     overflow: hidden;
@@ -74,17 +79,19 @@ label {
 }
 
 .text_part label{
+    display: flex;
     margin-top: 10px;
 }
 
 .text_part textarea:focus{
+    display: flex;
     border-bottom: 2px solid #78788c;
 }
 /*#endregion Text part*/
 
 /*#region Chroose part*/
 /*Choose div radio and check*/
-.choose_part{
+.choose_part{ 
     display: flex;
     position: relative;
     flex-direction: row;
@@ -94,7 +101,9 @@ label {
 }
 
 .choose_part label{
+    display: flex;
     margin-bottom: 3px;
+    white-space: nowrap;
 }
 /*Radio*/
 .choose_part .radio{
@@ -112,6 +121,7 @@ label {
 }
 /*Span for both */
 span{
+    display: flex;
     margin-bottom: 3px;
 }
 
@@ -124,7 +134,7 @@ span{
 }
 
 .choose_country select{
-    display: block;
+    display: flex;
     width: 100%;
     margin-top: 5px;
     border: none;
@@ -136,6 +146,7 @@ span{
 }
 
 .choose_country option{
+    display: flex;
     border: none;
     outline: none;
     background-color: #E6E6E6;
@@ -151,6 +162,7 @@ span{
 
 /* Button send */
 button{
+    display: flex;
     padding: 8px 12px;
     margin: 8px 0 0;
     font-family: "Montserrat", sans-serif;
