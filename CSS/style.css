@@ -1,6 +1,5 @@
 body{
     background: #59abe3;
-
 }
 .wrapper{
     display: flex;
@@ -8,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     margin: 0;
 }
@@ -93,6 +92,7 @@ label {
 
 .text_part span .error{
     display: flex;
+    margin: 0 0 0 0 ;
     font-size: 14px;
     color: #E34951;
     margin-left: 8px;
