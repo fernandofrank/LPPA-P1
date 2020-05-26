@@ -58,7 +58,6 @@
                         <span>
                             <label for="other">
                                 <input type="radio" id="other" name="gender" value="other">&nbspOther</label>
-
                         </span>
                     </div>
                     <div class="check">
@@ -82,21 +81,29 @@
                                 &nbspTechnology</label>
                         </span>
                     </div>
+
                 </div>
+                <p id="choose_error" class="error"></p>
                 <div class="choose_country">
                     <!-- Selec country-->
-                    <label for="country">Country:</label>
+                    <span>
+                        <label for="country">Country:</label>
+                        <p id="choose_country_error" class="error"></p>
+                    </span>
                     <select id="country" name="country">
-                        <option value="" disabled selected>- Select country-</option>
-                        <option value="argentina">Argentina</option>
-                        <option value="chile">Chile</option>
-                        <option value="brasil">Brasil</option>
-                        <option value="uruguay ">Uruguay</option>
+                        <option id="select" value="" disabled selected>- Select country-</option>
+                        <option id="argentina" value="argentina">Argentina</option>
+                        <option id="chile" value="chile">Chile</option>
+                        <option id="brasil" value="brasil">Brasil</option>
+                        <option id="uruguay" value="uruguay ">Uruguay</option>
                     </select>
                 </div>
                 <div class="text_part">
                     <!-- Text box coments -->
-                    <label for="comments">comments:</label>
+                    <span>
+                        <label for="comments">comments:</label>
+                        <p id="comments_error" class="error"></p>
+                    </span>
                     <textarea id="comments" placeholder="Write comments here." rows="2"></textarea>
                 </div>
                 <div>
