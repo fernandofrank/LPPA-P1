@@ -38,12 +38,22 @@ label {
     font-size: 14px;
     color: #5a5a5a;
 }
+
+.error{
+    display: flex;
+    margin: 0 0 0 0 ;
+    font-size: 14px;
+    color: #E34951;
+    margin-left: 8px;
+}
+
 /*#region Text part*/
 .text_part{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
+
 .text_part input{
     display: flex;
     flex-direction: column;
@@ -90,14 +100,6 @@ label {
     margin-top: 10px;
 }
 
-.text_part span .error{
-    display: flex;
-    margin: 0 0 0 0 ;
-    font-size: 14px;
-    color: #E34951;
-    margin-left: 8px;
-}
-
 /*#endregion Text part*/
 
 /*#region Chroose part*/
@@ -107,7 +109,7 @@ label {
     flex-direction: row;
     width: 100%;
     height: 100px;
-    padding: 10px;
+    padding:  10px 10px 0 10px;
 }
 
 .choose_part label{
@@ -115,29 +117,37 @@ label {
     margin-bottom: 3px;
     white-space: nowrap;
 }
+
 /*Radio*/
 .choose_part .radio{
     display: flex; 
     flex-direction: column;
     width: 50%;
 }
+
 /*Check*/
 .choose_part .check{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
+
 /*label for both */
 .choose_part span{
     display: flex;
     margin-bottom: 3px;
 }
 
+.choose_part .error{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*Country*/
 .choose_country{
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
 }
 
 .choose_country select{
@@ -163,6 +173,12 @@ label {
     border: none;
     outline: none;
     background-color: #E6E6E6;
+}
+
+.choose_country span{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 /*#endregion Chroose part*/
