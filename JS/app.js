@@ -21,7 +21,7 @@ function val_name() {//check the name if the name has invalid characters or is s
     }
 }
 
-function val_surname() {//check the surname if the name has invalid characters or is short
+function val_surname() { //check the surname if the name has invalid characters or is short
     if (!letters_test.test(surname.value)) {
         surname_error.innerHTML = "Complete whit only letters."
         console.log('Surname: Complete whit only letters.')
