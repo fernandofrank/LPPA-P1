@@ -106,6 +106,17 @@ function val_country() {//check if country is null
     }
 }
 
+function val_comments() {//validation text area comments
+    if (comments.value.length < 1) {
+        comments_error.innerHTML = 'Write a comment, please.'
+        console.log('Comment: Write a coment, please.')
+        check_comments = false
+    } else {
+        comments_error.innerHTML = ''
+        check_comments = true
+    }
+}
+
 function form_data() {//write in console all data of the form
     console.log('Name: ' + username.value)
     console.log('Surname: ' + surname.value)
@@ -150,9 +161,9 @@ function form_data() {//write in console all data of the form
 }
 
 function clear_frm() {//check if the form is all right
-    if (check_name === true && check_surname === true && check_age === true && check_email === true && check_sex === true && check_interest === true && check_country === true) {
+    if (check_name === true && check_surname === true && check_age === true && check_email === true && check_sex === true && check_interest === true && check_country === true && check_comments === true) {
         form_data()
-        window.alert("Contragrats-");
+        window.alert("Contragrats you sing in");
         username.value = ''
         surname.value = ''
         email.value = ''
@@ -178,6 +189,7 @@ function send_frm() {//btn validations
     val_age()
     val_choose()
     val_country()
+    val_comments()
     clear_frm()
     return false
 }
