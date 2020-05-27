@@ -68,20 +68,28 @@ function val_age() {//check the age for numbres between 0 to 100 or is inval
 
 function val_choose() {//first check if they are all right, later check one by one
     if (male.checked === false && female.checked === false && other.checked === false && music.checked === false && sport.checked === false && games.checked === false && technology.checked === false) {
+        country_padding.style.padding = "0 10px 0 10px"
+        country_span.style.marginTop = "3px"
         choose_error.innerHTML = 'Choose a sex and a interest theme.'
         console.log('Choose a sex and a interest theme.')
         check_sex = false
         check_interest = false
     } else if (male.checked === false && female.checked === false && other.checked === false) {
+        country_padding.style.padding = "0 10px 0 10px"
+        country_span.style.marginTop = "3px"
         choose_error.innerHTML = 'Choose a sex, please.'
         console.log('Sex: Choose a sex')
         check_sex = false
     } else if (music.checked === false && sport.checked === false && games.checked === false && technology.checked === false) {
+        country_padding.style.padding = "0 10px 0 10px"
+        country_span.style.marginTop = "3px"
         choose_error.innerHTML = 'Choose a interest theme, please.'
         console.log('Interest theme: Choose a interest theme')
         check_interest = false
     } else {
         choose_error.innerHTML = ''
+        country_padding.style.padding = "10px 10px 0 10px"
+        country_span.style.marginTop = "10px"
         check_interest = true
         check_sex = true
     }
@@ -210,7 +218,8 @@ function getElements() {
     send_btn = document.getElementById('send')
     send_btn.onclick = send_frm
 
-    //choose_country_padding = document.getElementsByClassName('choose_country').style.padding = "0 10px 0 10px";
+    country_padding = document.getElementById("choose_country")
+    country_span = document.getElementById("span_country")
 }
 
 var init = function () {
