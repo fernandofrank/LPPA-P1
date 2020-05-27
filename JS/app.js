@@ -152,7 +152,7 @@ function form_data() {//write in console all data of the form
 function clear_frm() {//check if the form is all right
     if (check_name === true && check_surname === true && check_age === true && check_email === true && check_sex === true && check_interest === true && check_country === true) {
         form_data()
-        window.alert("Contragrats-");
+        window.alert("Contragrats you sing in");
         username.value = ''
         surname.value = ''
         email.value = ''
