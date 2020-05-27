@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     margin: 0;
 }
@@ -138,19 +138,20 @@ label {
     margin-bottom: 3px;
 }
 
-.choose_part .error{
+#choose_error{
     display: flex;
     flex-wrap: wrap;
+    margin:  5px 0 0 8px;
 }
 
 /*Country*/
-.choose_country{
+#choose_country{
     display: flex;
     flex-direction: column;
     padding: 10px 10px 0 10px;
 }
 
-.choose_country select{
+#choose_country select{
     display: flex;
     width: 100%;
     margin-top: 5px;
@@ -162,20 +163,20 @@ label {
     -webkit-appearance: none;
 }
 
-.choose_country option{
+#choose_country option{
     display: flex;
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
 
-.choose_country option:hover{
+#choose_country option:hover{
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
 
-.choose_country span{
+#choose_country span{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
