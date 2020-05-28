@@ -218,7 +218,7 @@ function get_elements() {
     //Btn
     send_btn = document.getElementById("send")
     send_btn.onclick = send_frm
-
+    //bring the variables to change css when you have verified errors
     country_padding = document.getElementById("choose_country")
     country_span = document.getElementById("span_country")
 }
