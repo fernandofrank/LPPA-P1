@@ -2,15 +2,15 @@ var email_test = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\
 var letters_test = /^[a-zA-Z]*$/; // validation for letters
 var numbers_test = /^([1-9]?\d|100)$/; //validation for numbers
 function val_name() {//check the name if the name has invalid characters or is short
-    if (!letters_test.test(username.value)) {
+    if (!letters_test.test(user_name.value)) {
         name_error.innerHTML = "Complete whit only letters."
         console.log('Name: Complete whit only letters.')
         check_name = false
-    } else if (username.value.length < 3 && username.value.length > 0) {
+    } else if (user_name.value.length < 3 && user_name.value.length > 0) {
         name_error.innerHTML = "The Username is very short."
         console.log('Name: The Username is very short.')
         check_name = false
-    } else if (username.value.length === 0) {
+    } else if (user_name.value.length === 0) {
         name_error.innerHTML = "Text area is incomplet."
         console.log('Name: Text area is incomplet.')
         check_name = false
@@ -110,7 +110,7 @@ function val_comments() {//validation text area comments
     }
 }
 function form_data() {//write in console all data of the form
-    console.log('Name: ' + username.value)
+    console.log('Name: ' + user_name.value)
     console.log('Surname: ' + surname.value)
     console.log('Email :' + email.value)
     console.log('Age : ' + age.value)
@@ -155,7 +155,7 @@ function clear_frm() {//check if the form is all right
     if (check_name === true && check_surname === true && check_age === true && check_email === true && check_sex === true && check_interest === true && check_country === true && check_comments === true) {
         form_data()
         window.alert("Contragrats you sing in");
-        username.value = ''
+        user_name.value = ''
         surname.value = ''
         email.value = ''
         age.value = ''
@@ -165,7 +165,7 @@ function clear_frm() {//check if the form is all right
         music.checked = false
         sport.checked = false
         games.checked = false
-        technology.selected = false
+        technology.checked = false
         comments.value = ''
     } else {
         console.log('Please complete all the form for show results')
@@ -185,7 +185,7 @@ function send_frm() {//btn validations
 }
 function get_elements() {
     //Inputs text
-    username = document.getElementById('name')
+    user_name = document.getElementById('name')
     name_error = document.getElementById('name_error')
     surname = document.getElementById('surname')
     surname_error = document.getElementById('surname_error')
