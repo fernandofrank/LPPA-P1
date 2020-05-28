@@ -1,7 +1,6 @@
 var email_test = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;// validation for email
 var letters_test = /^[a-zA-Z]*$/; // validation for letters
 var numbers_test = /^([1-9]?\d|100)$/; //validation for numbers
-
 function val_name() {//check the name if the name has invalid characters or is short
     if (!letters_test.test(username.value)) {
         name_error.innerHTML = "Complete whit only letters."
@@ -20,7 +19,6 @@ function val_name() {//check the name if the name has invalid characters or is s
         check_name = true
     }
 }
-
 function val_surname() {//check the surname if the name has invalid characters or is short
     if (!letters_test.test(surname.value)) {
         surname_error.innerHTML = "Complete whit only letters."
@@ -39,7 +37,6 @@ function val_surname() {//check the surname if the name has invalid characters o
         check_surname = true
     }
 }
-
 function val_email() {//check correct format for email
     if (!email_test.test(email.value)) {
         email_error.innerHTML = "Email format is wrong"
@@ -50,7 +47,6 @@ function val_email() {//check correct format for email
         check_email = true
     }
 }
-
 function val_age() {//check the age for numbres between 0 to 100 or is inval 
     if (age.value < 1 || age.value > 99) {
         age_error.innerHTML = "Invalid age";
@@ -65,7 +61,6 @@ function val_age() {//check the age for numbres between 0 to 100 or is inval
         check_age = true
     }
 }
-
 function val_choose() {//first check if they are all right, later check one by one
     if (male.checked === false && female.checked === false && other.checked === false && music.checked === false && sport.checked === false && games.checked === false && technology.checked === false) {
         country_padding.style.padding = "0 10px 0 10px"
@@ -94,7 +89,6 @@ function val_choose() {//first check if they are all right, later check one by o
         check_sex = true
     }
 }
-
 function val_country() {//check if country is null
     if (select.selected === true) {
         choose_country_error.innerHTML = 'Select a country'
@@ -105,7 +99,6 @@ function val_country() {//check if country is null
         check_country = true
     }
 }
-
 function val_comments() {//validation text area comments
     if (comments.value.length < 1) {
         comments_error.innerHTML = 'Write a comment, please.'
@@ -116,7 +109,6 @@ function val_comments() {//validation text area comments
         check_comments = true
     }
 }
-
 function form_data() {//write in console all data of the form
     console.log('Name: ' + username.value)
     console.log('Surname: ' + surname.value)
@@ -159,7 +151,6 @@ function form_data() {//write in console all data of the form
     }
     console.log('Comments: ' + comments.value)
 }
-
 function clear_frm() {//check if the form is all right
     if (check_name === true && check_surname === true && check_age === true && check_email === true && check_sex === true && check_interest === true && check_country === true && check_comments === true) {
         form_data()
@@ -180,7 +171,6 @@ function clear_frm() {//check if the form is all right
         console.log('Please complete all the form for show results')
     }
 }
-
 function send_frm() {//btn validations
     console.clear()
     val_name()
@@ -193,8 +183,7 @@ function send_frm() {//btn validations
     clear_frm()
     return false
 }
-
-function getElements() {
+function get_elements() {
     //Inputs text
     username = document.getElementById('name')
     name_error = document.getElementById('name_error')
@@ -233,9 +222,7 @@ function getElements() {
     country_padding = document.getElementById("choose_country")
     country_span = document.getElementById("span_country")
 }
-
 var init = function () {
-    getElements();
+    get_elements();
 }
-
 window.onload = init

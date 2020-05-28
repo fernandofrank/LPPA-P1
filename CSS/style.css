@@ -9,7 +9,6 @@
     margin: 0;
     background: #59abe3;
 }
-
 .form{
     display: flex;
     flex-direction: column;
@@ -22,7 +21,6 @@
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
 }
-
 /* Button send */
 .signin{
     display: flex;
@@ -31,13 +29,11 @@
     color: #78788c;
     border-bottom: 3px solid #78788c;
 }
-
-label {
+label{
     display: flex;
     font-size: 14px;
     color: #5a5a5a;
 }
-
 .error{
     display: flex;
     margin: 0 0 0 0 ;
@@ -45,14 +41,12 @@ label {
     color: #E34951;
     margin-left: 8px;
 }
-
 /*#region Text part*/
 .text_part{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-
 .text_part input{
     display: flex;
     flex-direction: column;
@@ -68,11 +62,9 @@ label {
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
 }
-
 .text_part input:focus{
     border-bottom: 2px solid #78788c;
 }
-
 .text_part textarea{
     display: flex;
     width: 100%;
@@ -87,20 +79,16 @@ label {
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
 }
-
 .text_part textarea:focus{
     display: flex;
     border-bottom: 2px solid #78788c;
 }
-
 .text_part span{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
-
 /*#endregion Text part*/
-
 /*#region Chroose part*/
 /*Choose div radio and check*/
 .choose_part{ 
@@ -110,46 +98,39 @@ label {
     height: 100px;
     padding:  10px 10px 0 10px;
 }
-
 .choose_part label{
     display: flex;
     margin-bottom: 3px;
     white-space: nowrap;
 }
-
 /*Radio*/
 .choose_part .radio{
     display: flex; 
     flex-direction: column;
     width: 50%;
 }
-
 /*Check*/
 .choose_part .check{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-
 /*label for both */
 .choose_part span{
     display: flex;
     margin-bottom: 3px;
 }
-
 #choose_error{
     display: flex;
     flex-wrap: wrap;
     margin:  5px 0 0 8px;
 }
-
 /*Country*/
 #choose_country{
     display: flex;
     flex-direction: column;
     padding: 10px 10px 0 10px;
 }
-
 #choose_country select{
     display: flex;
     width: 100%;
@@ -161,28 +142,23 @@ label {
     background: #E6E6E6;
     -webkit-appearance: none;
 }
-
 #choose_country option{
     display: flex;
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
-
 #choose_country option:hover{
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
-
 #choose_country span{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
-
 /*#endregion Chroose part*/
-
 /* Button send */
 button{
     display: flex;
@@ -195,7 +171,6 @@ button{
     cursor: pointer;
     transition: all 0.3s;
 }
-
 button:hover{
     background: #78788c;
     color: #ffffff;
