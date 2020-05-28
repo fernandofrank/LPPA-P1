@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
     margin: 0;
     background: #59abe3;
 }
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 340px;
@@ -22,19 +22,19 @@
     box-shadow: 0 0 40px -10px #000;
 }
 /* Button send */
-.signin{
+.signin {
     display: flex;
     margin: 10px 0;
     width: 120px;
     color: #78788c;
     border-bottom: 3px solid #78788c;
 }
-label{
+label {
     display: flex;
     font-size: 14px;
     color: #5a5a5a;
 }
-.error{
+.error {
     display: flex;
     margin: 0 0 0 0 ;
     font-size: 14px;
@@ -42,12 +42,12 @@ label{
     margin-left: 8px;
 }
 /*#region Text part*/
-.text_part{
+.text_part {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-.text_part input{
+.text_part input {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
@@ -62,10 +62,10 @@ label{
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
 }
-.text_part input:focus{
+.text_part input:focus {
     border-bottom: 2px solid #78788c;
 }
-.text_part textarea{
+.text_part textarea {
     display: flex;
     width: 100%;
     padding: 10px;
@@ -79,11 +79,11 @@ label{
     transition: all 0.3s;
     border-bottom: 2px solid #bebed2;
 }
-.text_part textarea:focus{
+.text_part textarea:focus {
     display: flex;
     border-bottom: 2px solid #78788c;
 }
-.text_part span{
+.text_part span {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
@@ -91,47 +91,47 @@ label{
 /*#endregion Text part*/
 /*#region Chroose part*/
 /*Choose div radio and check*/
-.choose_part{ 
+.choose_part { 
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100px;
     padding:  10px 10px 0 10px;
 }
-.choose_part label{
+.choose_part label {
     display: flex;
     margin-bottom: 3px;
     white-space: nowrap;
 }
 /*Radio*/
-.choose_part .radio{
+.choose_part .radio {
     display: flex; 
     flex-direction: column;
     width: 50%;
 }
 /*Check*/
-.choose_part .check{
+.choose_part .check {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 /*label for both */
-.choose_part span{
+.choose_part span {
     display: flex;
     margin-bottom: 3px;
 }
-#choose_error{
+#choose_error {
     display: flex;
     flex-wrap: wrap;
     margin:  5px 0 0 8px;
 }
 /*Country*/
-#choose_country{
+#choose_country {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 0 10px;
 }
-#choose_country select{
+#choose_country select {
     display: flex;
     width: 100%;
     margin-top: 5px;
@@ -142,25 +142,25 @@ label{
     background: #E6E6E6;
     -webkit-appearance: none;
 }
-#choose_country option{
+#choose_country option {
     display: flex;
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
-#choose_country option:hover{
+#choose_country option:hover {
     border: none;
     outline: none;
     background-color: #E6E6E6;
 }
-#choose_country span{
+#choose_country span {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
 /*#endregion Chroose part*/
 /* Button send */
-button{
+button {
     display: flex;
     padding: 8px 12px;
     margin: 8px 0 0;
@@ -171,7 +171,7 @@ button{
     cursor: pointer;
     transition: all 0.3s;
 }
-button:hover{
+button:hover {
     background: #78788c;
     color: #ffffff;
 }
